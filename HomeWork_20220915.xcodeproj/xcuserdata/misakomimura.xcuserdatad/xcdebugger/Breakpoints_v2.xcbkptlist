@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CF0B8F90-3C3D-44F2-BC34-8F5E5D88C657"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50A18039-2567-4B71-8955-7439F7D96FC0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HomeWork_20220915/Trend/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "50A18039-2567-4B71-8955-7439F7D96FC0 - d6fa2f4155afeed6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork_20220915.ViewController.trendTableView.getter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "HomeWork_20220915"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/misakomimura/Desktop/Practice/HomeWork_20220915/HomeWork_20220915/Trend/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "50A18039-2567-4B71-8955-7439F7D96FC0 - b15e49b9c6e1c2da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork_20220915.ViewController.trendTableView.setter : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "HomeWork_20220915"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/misakomimura/Desktop/Practice/HomeWork_20220915/HomeWork_20220915/Trend/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "50A18039-2567-4B71-8955-7439F7D96FC0 - 62e6d7e823f205c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork_20220915.ViewController.trendTableView.modify : Swift.Optional&lt;__C.UITableView&gt;"
+                  moduleName = "HomeWork_20220915"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/misakomimura/Desktop/Practice/HomeWork_20220915/HomeWork_20220915/Trend/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "50A18039-2567-4B71-8955-7439F7D96FC0 - e7dd330e14af2c4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork_20220915.ViewController.trendTableView.modify : Swift.Optional&lt;__C.UITableView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "HomeWork_20220915"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/misakomimura/Desktop/Practice/HomeWork_20220915/HomeWork_20220915/Trend/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "50A18039-2567-4B71-8955-7439F7D96FC0 - 6be2e9ab9ac35663"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork_20220915.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; HomeWork_20220915.ViewController"
+                  moduleName = "HomeWork_20220915"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/misakomimura/Desktop/Practice/HomeWork_20220915/HomeWork_20220915/Trend/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "50A18039-2567-4B71-8955-7439F7D96FC0 - 5aca6857c7031784"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HomeWork_20220915.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;HomeWork_20220915.ViewController&gt;"
+                  moduleName = "HomeWork_20220915"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/misakomimura/Desktop/Practice/HomeWork_20220915/HomeWork_20220915/Trend/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

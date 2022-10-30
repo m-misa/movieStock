@@ -108,12 +108,12 @@ extension ViewController:UITableViewDataSource {
         }
         
         cell.contentName.text = trendLists.title
-        
         //お気にい入りチェック
         if viewModel.isFavorite(at: trendLists){
             cell.favorite.image = UIImage(named: "favorite")
         } else {
-            cell.favorite.image = nil
+//            cell.favorite.image = nil
+            cell.favorite.image = UIImage(named: "grayFavorite")
         }
         
         cell.contentImage.sd_setImage(with: URL(string: moviePosterPath), placeholderImage: UIImage(named: "noimage"))

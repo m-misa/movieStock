@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mfb-Ly-haA">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -130,7 +131,7 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="top" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7gj-hD-bAD">
-                                        <rect key="frame" x="16" y="0.0" width="358" height="200"/>
+                                        <rect key="frame" x="20" y="0.0" width="350" height="200"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OZP-tp-sQ9">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
@@ -140,10 +141,10 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yIt-Of-dxX">
-                                                <rect key="frame" x="166" y="0.0" width="192" height="67.333333333333329"/>
+                                                <rect key="frame" x="166" y="0.0" width="184" height="67.333333333333329"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvn-7h-lde">
-                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="34.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="184" height="34.333333333333336"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Label">
@@ -156,7 +157,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jic-Wg-SsW">
-                                                        <rect key="frame" x="0.0" y="42.333333333333343" width="192" height="25"/>
+                                                        <rect key="frame" x="0.0" y="42.333333333333343" width="184" height="25"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Label">
@@ -176,11 +177,11 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="znW-Kx-Rh1" firstAttribute="trailing" secondItem="7gj-hD-bAD" secondAttribute="trailing" constant="16" id="1b3-6x-2xe"/>
+                                    <constraint firstItem="znW-Kx-Rh1" firstAttribute="trailing" secondItem="7gj-hD-bAD" secondAttribute="trailing" constant="20" id="1b3-6x-2xe"/>
                                     <constraint firstItem="7gj-hD-bAD" firstAttribute="width" secondItem="Kfb-HR-gua" secondAttribute="width" id="7NM-Uh-9eL"/>
                                     <constraint firstItem="7gj-hD-bAD" firstAttribute="height" secondItem="Kfb-HR-gua" secondAttribute="height" id="ZzS-X2-eFu"/>
                                     <constraint firstItem="7gj-hD-bAD" firstAttribute="bottom" secondItem="Kfb-HR-gua" secondAttribute="bottom" id="nFi-xw-NVX"/>
-                                    <constraint firstItem="7gj-hD-bAD" firstAttribute="leading" secondItem="znW-Kx-Rh1" secondAttribute="leading" constant="16" id="uCd-6M-kok"/>
+                                    <constraint firstItem="7gj-hD-bAD" firstAttribute="leading" secondItem="znW-Kx-Rh1" secondAttribute="leading" constant="20" id="uCd-6M-kok"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Kfb-HR-gua"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="znW-Kx-Rh1"/>

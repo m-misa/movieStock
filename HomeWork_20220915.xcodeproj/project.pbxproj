@@ -28,6 +28,11 @@
 		7088FA7F28D33DF7007FFB07 /* TmdbTrendRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088FA7E28D33DF7007FFB07 /* TmdbTrendRepository.swift */; };
 		7088FA8128D33E2B007FFB07 /* RealmRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7088FA8028D33E2B007FFB07 /* RealmRepository.swift */; };
 		70953F7228D6382600838D75 /* TrendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70953F7128D6382600838D75 /* TrendTableViewCell.swift */; };
+		70DCD287290E833B008DC4AC /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DCD286290E833B008DC4AC /* NotesViewController.swift */; };
+		70DCD289290E834E008DC4AC /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DCD288290E834E008DC4AC /* NotesViewModel.swift */; };
+		70DCD28B290E8587008DC4AC /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DCD28A290E8587008DC4AC /* FavoriteViewController.swift */; };
+		70DCD290290E87FB008DC4AC /* ImpressionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DCD28F290E87FB008DC4AC /* ImpressionViewController.swift */; };
+		70DCD292290E954F008DC4AC /* ImpressionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DCD291290E954F008DC4AC /* ImpressionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,11 @@
 		7088FA7E28D33DF7007FFB07 /* TmdbTrendRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbTrendRepository.swift; sourceTree = "<group>"; };
 		7088FA8028D33E2B007FFB07 /* RealmRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmRepository.swift; sourceTree = "<group>"; };
 		70953F7128D6382600838D75 /* TrendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewCell.swift; sourceTree = "<group>"; };
+		70DCD286290E833B008DC4AC /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		70DCD288290E834E008DC4AC /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		70DCD28A290E8587008DC4AC /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		70DCD28F290E87FB008DC4AC /* ImpressionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpressionViewController.swift; sourceTree = "<group>"; };
+		70DCD291290E954F008DC4AC /* ImpressionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpressionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,9 +155,11 @@
 				7088FA7728D33BDB007FFB07 /* Repository */,
 				7088FA7428D33AAA007FFB07 /* Trend */,
 				7088FA4D28D338F3007FFB07 /* Assets.xcassets */,
+				70DCD282290E8019008DC4AC /* Favorite */,
 				7088FA4728D338F2007FFB07 /* Main.storyboard */,
 				7088FA4F28D338F3007FFB07 /* LaunchScreen.storyboard */,
 				7088FA5228D338F3007FFB07 /* Info.plist */,
+				70DCD283290E82DF008DC4AC /* Notes */,
 				7088FA4A28D338F2007FFB07 /* HomeWork_20220915.xcdatamodeld */,
 			);
 			path = HomeWork_20220915;
@@ -176,6 +188,7 @@
 				7088FA4528D338F2007FFB07 /* ViewController.swift */,
 				7088FA7C28D33D64007FFB07 /* TrendViewModel.swift */,
 				70953F7128D6382600838D75 /* TrendTableViewCell.swift */,
+				70DCD28C290E87C6008DC4AC /* Impression */,
 				7062FDAF28D730D000EC627F /* Detail */,
 			);
 			path = Trend;
@@ -205,6 +218,32 @@
 				7058014028E066C4007CBB1E /* Entity */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		70DCD282290E8019008DC4AC /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				70DCD28A290E8587008DC4AC /* FavoriteViewController.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		70DCD283290E82DF008DC4AC /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				70DCD286290E833B008DC4AC /* NotesViewController.swift */,
+				70DCD288290E834E008DC4AC /* NotesViewModel.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		70DCD28C290E87C6008DC4AC /* Impression */ = {
+			isa = PBXGroup;
+			children = (
+				70DCD28F290E87FB008DC4AC /* ImpressionViewController.swift */,
+				70DCD291290E954F008DC4AC /* ImpressionViewModel.swift */,
+			);
+			path = Impression;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,8 +393,13 @@
 				7062FDB728D731FD00EC627F /* DetailViewModel.swift in Sources */,
 				7058014228E06720007CBB1E /* TrendEntity.swift in Sources */,
 				7088FA7F28D33DF7007FFB07 /* TmdbTrendRepository.swift in Sources */,
+				70DCD290290E87FB008DC4AC /* ImpressionViewController.swift in Sources */,
+				70DCD287290E833B008DC4AC /* NotesViewController.swift in Sources */,
+				70DCD289290E834E008DC4AC /* NotesViewModel.swift in Sources */,
+				70DCD292290E954F008DC4AC /* ImpressionViewModel.swift in Sources */,
 				70953F7228D6382600838D75 /* TrendTableViewCell.swift in Sources */,
 				7088FA4228D338F2007FFB07 /* AppDelegate.swift in Sources */,
+				70DCD28B290E8587008DC4AC /* FavoriteViewController.swift in Sources */,
 				7088FA8128D33E2B007FFB07 /* RealmRepository.swift in Sources */,
 				7088FA4C28D338F2007FFB07 /* HomeWork_20220915.xcdatamodeld in Sources */,
 				7088FA4428D338F2007FFB07 /* SceneDelegate.swift in Sources */,

@@ -22,6 +22,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //テストクラッシュ
+//        fatalError("Crash was triggered")
+        
         viewModel.trendContent {
             //            $0.mapError {}
             switch $0{

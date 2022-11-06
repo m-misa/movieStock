@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol TrendViewModel {
     func trendContent(completion:@escaping(Result<Bool,Error>) -> Void )
@@ -13,6 +14,7 @@ protocol TrendViewModel {
     func trendDetaileContent(indexPath:IndexPath) -> TrendResult
     func favoriteAt(row:Int)
     func isFavorite(at:TrendResult) -> Bool
+    func trendContentRx() -> Single<Bool>
 }
 
 
@@ -21,6 +23,8 @@ class TrendViewModelImpl:TrendViewModel {
     let tmdbTrendRepository:TmdbTrendRepository = TmdbTrendRepositoryImpl()
     let realmRepository:RealmRepository = RealmRepositoryImpl.shared
     var contentData:[TrendResult] = [TrendResult]()
+    
+    
     
     func trendContent(completion:@escaping(Result<Bool,Error>) -> Void ){
         tmdbTrendRepository.GetPath {
@@ -36,6 +40,24 @@ class TrendViewModelImpl:TrendViewModel {
             }
         }
     }
+    
+    //rxswift
+    func trendContentRx() -> Single<Bool>{
+        return Single.create { observer in
+            self.tmdbTrendRepository.GetPathRx().subscribe{
+                switch $0{
+                case .success(let tmdbTrend):
+                    self.contentData = tmdbTrend.results
+                    observer(.success(true))
+                case .failure(let error):
+                    observer(.failure(error))
+                }
+            }
+        }
+        
+        
+    }
+    
     
     func trendCount() -> Int{
         contentData.count

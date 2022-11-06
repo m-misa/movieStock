@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
 
 //***********　プロトコル:使っていいよBOX　*************
 protocol TmdbTrendRepository {
     func GetPath(completion:@escaping(Result<TmdbTrend,Error>) -> Void)
+    func GetPathRx() -> Single<TmdbTrend>
 }
 
 /*　構造体（クラスに近い）：データセット的なJSON形式で渡ってきたデータを格納。*/
@@ -40,7 +43,7 @@ class TmdbTrendRepositoryImpl:TmdbTrendRepository {
     //Result<TmdbTrend,Error>リザルト型に変更
     func GetPath(completion:@escaping(Result<TmdbTrend,Error>) -> Void){
         
-//        let aaa = trendCategory.a()
+        //        let aaa = trendCategory.a()
         
         guard let url = URL(string: "https://api.themoviedb.org/3/trending/"+trendCategory+"/"+trendPeriod+"?api_key=e5b4de861fb39e30878b374663ec3d03&language=ja-JP") else { return }
         
@@ -49,9 +52,9 @@ class TmdbTrendRepositoryImpl:TmdbTrendRepository {
         let task = URLSession.shared.dataTask(with: request) { (data,response,error) in
             //guard let data = data else { return } swift5.7 xcode14からで省略可能に
             
-//            error.map {
-//                completion(.failure($0))
-//            }
+            //            error.map {
+            //                completion(.failure($0))
+            //            }
             
             if let error {
                 completion(.failure(error))
@@ -62,17 +65,58 @@ class TmdbTrendRepositoryImpl:TmdbTrendRepository {
             
             do {
                 let DecodeData:TmdbTrend = try decoder.decode(TmdbTrend.self, from: data)
-//                print(DecodeData)
+                //                print(DecodeData)
                 //リザルト型に変更
                 completion(.success(DecodeData))
             } catch let e {
                 print("**JSON Decode Error:\(e)")
                 //リザルト型に変更
-//                fatalError()
+                //                fatalError()
                 completion(.failure(e))
             }
         }
         task.resume()
+    }
+    
+    
+    //Rxswiftの関数
+    func GetPathRx() -> Single<TmdbTrend>{
+        return Single.create { observer in
+            
+            guard let url = URL(string: "https://api.themoviedb.org/3/trending/"+trendCategory+"/"+trendPeriod+"?api_key=e5b4de861fb39e30878b374663ec3d03&language=ja-JP") else { return }
+            
+            let request = URLRequest(url: url)
+            let decoder:JSONDecoder = JSONDecoder()
+            let task = URLSession.shared.dataTask(with: request) { (data,response,error) in
+                
+                if let error {
+                    observer(.failure(error))
+                    return
+                }
+                
+                guard let data else { return }
+                
+                do {
+                    let DecodeData:TmdbTrend = try decoder.decode(TmdbTrend.self, from: data)
+                    //                print(DecodeData)
+                    //リザルト型に変更
+                    observer(.success(DecodeData))
+                } catch let e {
+                    print("**JSON Decode Error:\(e)")
+                    //リザルト型に変更
+                    //                fatalError()
+                    observer(.failure(e))
+                }
+            }
+            task.resume()
+            
+//
+//            if isSuccess {
+//                observer(.success(records))
+//            } else {
+//                observer(.failure(error))
+//            }
+        }
     }
     
 }

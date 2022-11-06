@@ -6,6 +6,7 @@
 //
 import SDWebImage
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
     
@@ -15,6 +16,9 @@ class ViewController: UIViewController {
     var trendData:TmdbTrend?
     
     let viewModel:TrendViewModel = TrendViewModelImpl()
+    
+    //rxswift
+    let disposeBag = DisposeBag()
     //    var detailContents = viewModel.trendDetaileContent(indexPath: IndexPath)
     //***********　↑  ↑　*************
     
@@ -25,7 +29,21 @@ class ViewController: UIViewController {
         //テストクラッシュ
 //        fatalError("Crash was triggered")
         
-        viewModel.trendContent {
+        //クロージャーバーション
+//        viewModel.trendContent {
+//            //            $0.mapError {}
+//            switch $0{
+//            case .success:
+//                DispatchQueue.main.async {
+//                    self.trendTableView.reloadData()
+//                }
+//            case .failure(let error):
+//                print("エラー")
+//            }
+//        }
+        
+        //rxswift
+        viewModel.trendContentRx().subscribe{
             //            $0.mapError {}
             switch $0{
             case .success:
@@ -36,6 +54,7 @@ class ViewController: UIViewController {
                 print("エラー")
             }
         }
+        .disposed(by: disposeBag)
         
         // Do any additional setup after loading the view.
     }

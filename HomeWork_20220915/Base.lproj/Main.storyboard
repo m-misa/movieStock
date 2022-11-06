@@ -131,10 +131,10 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="top" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7gj-hD-bAD">
-                                        <rect key="frame" x="20" y="0.0" width="350" height="292.66666666666669"/>
+                                        <rect key="frame" x="20" y="0.0" width="350" height="246.33333333333334"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wxd-D2-5bi">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="292.66666666666669"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="246.33333333333334"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OZP-tp-sQ9">
                                                         <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
@@ -148,15 +148,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="感想を記録する"/>
                                                         <connections>
-                                                            <action selector="impression:" destination="La6-I3-DG5" eventType="touchUpInside" id="xZW-Np-Qwd"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDQ-Yp-oB0">
-                                                        <rect key="frame" x="0.0" y="258.33333333333331" width="150" height="34.333333333333314"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                                        <connections>
-                                                            <segue destination="M9S-Bv-84l" kind="show" id="CaT-92-4aG"/>
+                                                            <action selector="viewImpression:" destination="La6-I3-DG5" eventType="touchUpInside" id="TDJ-2B-2z3"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -500,8 +492,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CaT-92-4aG"/>
-        <segue reference="Qsc-VX-p0V"/>
+        <segue reference="j8A-Mc-Xdt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="film" catalog="system" width="128" height="93"/>

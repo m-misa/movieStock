@@ -9,6 +9,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    @IBAction func viewImpression(_ sender: Any) {
+        performSegue(withIdentifier: "detailToImpression", sender: nil)
+    }
     //***********　↓  ↓　*************
     @IBOutlet weak var detailImage: UIImageView!
     @IBOutlet weak var detailTitle: UILabel!
